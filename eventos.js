@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", function(){
-const midiv = document.getElementById("eldiv")
-
-midiv.addEventListener("click", () =>{
-    alert("Hola! Soy el div")
-
-})
-
-})
+document.addEventListener("DOMContentLoaded", function() {
+    const miDiv = document.getElementById("eldiv");
+    
+  
+    miDiv.addEventListener("click", function(event) {
+      if (event.target.matches("#botonazo")) {
+        alert("Hola!");
+      } else {
+        alert("Hola! Soy el div");
+      }
+    });
+  });
